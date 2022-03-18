@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+    transition: all .3s linear;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 7rem;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 1.2rem;
+    background-color: #F3F3F3;
+    color: #454545;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: #FFF;
+    width: 60%; min-width: 450px;
+    margin: 50px auto;
+    padding: 50px 20px;
+    border-radius: .8rem;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.05);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    display: block;
+    position: relative;
+    background-color: #4646dd;
+    color: #FFF;
+    font-size: 2rem;
+    text-align: center;
+    width: 300px;
+    padding: 18px 0;
+    margin: auto;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.container p {
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+#images {
+    width: 90%;
+    position: relative;
+    margin: auto;
+    display:flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+figure {
+    width: 45%;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: .8rem;
+    font-size: .8rem;
+    color: #000;
+}
+
+@media screen and (max-width:450px) {
+    #images {
+        flex-direction: column;
+    }
+    figure {
+        width: 90%;
+    }
+}
